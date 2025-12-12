@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G Shivaprasad - Portfolio</title>
+    <title>G Shiva Prasad | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    </head>
+</head>
 <body>
 
+    <!-- Header -->
     <header>
-        <div class="logo">G Shivaprasad</div>
         <nav>
-            <ul>
+            <h2 class="logo">Shiva Prasad</h2>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -20,54 +22,76 @@
         </nav>
     </header>
 
-    <main>
-        <section id="about" class="hero">
-            <div class="hero-content">
-                <h1>Hello, I'm G Shivaprasad</h1>
-                <h2>A Computer Science Student at Mallareddy University</h2>
-                <p>Roll No: 2311CS020258</p>
-                <a href="your_cv.pdf" class="button primary" target="_blank">Download Resume</a>
-            </div>
-            </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Hello, I'm <span>G Shiva Prasad</span></h1>
+            <p>Aspiring Software Developer | Web Developer | Tech Enthusiast</p>
+            <button onclick="scrollToSection('projects')" class="btn">View Projects</button>
+        </div>
+    </section>
 
-        <section id="skills" class="skills-section">
-            <h2>My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item">HTML & CSS</div>
-                <div class="skill-item">Python Programming</div>
-                <div class="skill-item">C++ / Data Structures</div>
-                <div class="skill-item">Database Management (SQL)</div>
-                </div>
-        </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I am an aspiring developer passionate about coding, problem-solving, and creating impactful digital products.
+            I enjoy working on full-stack projects, automation, and modern web technologies.
+        </p>
+    </section>
 
-        <section id="projects" class="projects-section">
-            <h2>Featured Projects</h2>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skill-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+            <div class="skill">SQL</div>
+            <div class="skill">React (Basics)</div>
+            <div class="skill">GitHub</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+
             <div class="project-card">
-                <h3>Project Title 1: Name of your Project</h3>
-                <p class="project-description">A brief description of the project, including the technologies used (e.g., Python, Django, HTML, CSS).</p>
-                <a href="#" class="button secondary" target="_blank">View Code / Live Demo</a>
+                <h3>AI-Based Crop Disease Detection</h3>
+                <p>A machine learning model to detect plant leaf diseases from images.</p>
             </div>
-            <div class="project-card">
-                <h3>Project Title 2: Another Cool Project</h3>
-                <p class="project-description">Describe your second project and what you learned while building it. Focus on your contribution.</p>
-                <a href="#" class="button secondary" target="_blank">View Code / Live Demo</a>
-            </div>
-            </section>
 
-        <section id="contact" class="contact-section">
-            <h2>Get In Touch</h2>
-            <p>I'm currently looking for internships and collaborative opportunities. Feel free to connect!</p>
-            <div class="contact-links">
-                <a href="mailto:your.email@example.com">Email</a>
-                <a href="#" target="_blank">LinkedIn</a>
-                <a href="#" target="_blank">GitHub</a>
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>Personal portfolio designed using HTML, CSS, and JavaScript.</p>
             </div>
-        </section>
-    </main>
+
+            <div class="project-card">
+                <h3>Database Management System</h3>
+                <p>Full SQL project including ER diagrams, stored procedures & transactions.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> your-email@example.com</p>
+            <p><strong>GitHub:</strong> github.com/yourusername</p>
+            <p><strong>LinkedIn:</strong> linkedin.com/in/yourprofile</p>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2025 G Shivaprasad. Built with HTML and CSS.</p>
+        <p>© 2025 G Shiva Prasad | All Rights Reserved</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
